@@ -57,3 +57,18 @@ This metric measures the average time it takes individuals to subscribe to the p
 The total sum of all these durations
 The total number of such durations
 Called the field av_watch_purch.
+
+# Interpretation
+
+First, I considered the conversion rate and compared this metric to industry benchmarks or historical data. Second, I examined the duration between the registration date and date of first-time engagement. A short duration—watching on the same or the next day—could indicate that the registration process and initial platform experience are user-friendly. At the same time, a longer duration may suggest that users are hesitant or facing challenges. Third, regarding the time it takes students to convert to paid subscriptions after their first lecture, a shorter span would suggest compelling content or effective up-sell strategies.
+
+Next, using a tool different from SQL (e.g., Excel, Python), I calculated the median and mode values of the date difference between registering and watching a lecture. Did the same for the date difference between watching a lecture and purchasing a subscription. I Compared the two metrics of each set to their respective mean values. To interpret the results even better, I created a distribution graph and tried to understand the relationship between these metrics (mean, median, and mode). Focus on the following key points.
+
+# Distribution Symmetry
+The distribution is likely symmetrical when the mean, median, and mode are equal or very close, forming a bell curve. If they differ, the data might be skewed to the left—indicated by a long tail on the left side—or to the right with a long tail on the right side.
+
+# Outliers
+If the mean is much higher or lower than the median, it suggests that there are outliers. For instance, if the average time to purchase a subscription is significantly higher than the median, it may imply that a few students took an exceptionally long time to decide.
+
+# Common Patterns
+If a specific value or set of values has a high frequency—corresponding to the mode of the dataset—it can spotlight common behaviors. For example, if the mode of the time between registration and watching a lecture is one day, it indicates that many students start watching the day after registration.
